@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sorbetería Deliciosa</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sorbetería Deliciosa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Carrusel de fotos -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/sorbete.jpg" class="carousel-img" alt="sorbete 1">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+<!-- Cards de información -->
+<div class="container my-5">
+    <div class="row justify-content-center g-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="/fresa.jpg" class="card-img-top" alt="Sorbete 1">
+                <div class="card-body">
+                    <h5 class="card-title">SORBETE DE FRESA CON GALLETAS.</h5>
+                    <p class="card-text">Es un sorberte deliciosa, es cremoso tiene un buen sabor.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="/sandia.jpg" class="card-img-top" alt="Sorbete 2">
+                <div class="card-body">
+                    <h5 class="card-title">SORBETE DE SANDIA</h5>
+                    <p class="card-text">Con la llegada del buen tiempo se antojan postres frescos y ligeros, como un riquísimo sorbete de fruta.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="/arandanos.jpg" class="card-img-top" alt="Sorbete 3">
+                <div class="card-body">
+                    <h5 class="card-title">SORBETE DE ARANDANOS</h5>
+                    <p class="card-text">Un delicioso sorbete para degustar incluso como una sana merienda para los más pequeños, sobre todo en los días calurosos.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- Formulario de contacto -->
+<div class="container d-flex justify-content-center">
+    <div class="col-sm-12 col-md-8 col-lg-6 formulario-container">
+        <h2>Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Sorbetería Deliciosa. Todos los derechos reservados.</p>
+    </footer>    
+</body>
+</html>
